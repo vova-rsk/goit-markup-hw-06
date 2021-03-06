@@ -1011,19 +1011,14 @@ input[name='email'] + .icon {
   border-color: var(--accent-color);
 }
 
-.group-checkbox label {
-  cursor: pointer;
-}
-
 .group-checkbox .check-icon {
   margin-right: 8px;
-  width: 16px;
-  height: 15px;
   fill: var(--accent-color);
   background-color: transparent;
   border: 2px solid black;
   border-radius: 2px;
   transition: box-shadow var(--delay) var(--time-function); /**/
+  cursor: pointer;
 }
 
 .check-icon use {
@@ -1047,6 +1042,7 @@ input[name='email'] + .icon {
   -o-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+  /* cursor: pointer; */
 }
 
 .checkbox-agreement:focus + .check-icon {
