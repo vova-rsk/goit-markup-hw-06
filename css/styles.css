@@ -835,18 +835,20 @@ button {
   padding-right: 16px;
   width: 358px;
   height: 46px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--third-txt-color);
-
   background-color: transparent;
-
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  transition: border-color var(--delay) var(--time-function); /***/
+}
+
+.sign-form > .sign-email:hover {
+  border-color: var(--accent-color);
 }
 
 .sign-form > .btn-sign {
@@ -855,10 +857,8 @@ button {
   align-items: center;
   margin-left: 12px;
   padding: 0;
-
   width: 200px;
   height: 46px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875px;
@@ -867,13 +867,16 @@ button {
   background-color: var(--current-bg-color);
   border: none;
   border-radius: 4px;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow var(--delay) var(--time-function);
 }
 
 .btn-sign > .sign-icon {
   margin-left: 10px;
   color: var(--current-text-color);
+}
+
+.sign-form > .btn-sign:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .modal .btn-close:hover,
@@ -970,9 +973,9 @@ button {
   margin-bottom: 10px;
 }
 
-input[name='name'] + .icon,
-input[name='telephone'] + .icon,
-input[name='email'] + .icon {
+.modal-form input[name='name'] + .icon,
+.modal-form input[name='telephone'] + .icon,
+.modal-form input[name='email'] + .icon {
   position: absolute;
   top: 50%;
   left: 12px;
