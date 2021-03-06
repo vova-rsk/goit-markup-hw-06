@@ -603,7 +603,7 @@
         </div>
         <div class="form-container">
           <p class="agitation-title"><b>Подпишитесь на рассылку</b></p>
-          <form class="sign-form" action="">
+          <form class="sign-form" novalidate>
             <input
               class="sign-email"
               type="email"
@@ -636,7 +636,7 @@
           </svg>
         </button>
         <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
-        <form class="modal-form" action="">
+        <form class="modal-form" novalidate>
           <label class="label" for="modal-name">Имя</label>
           <div class="group">
             <input type="text" name="name" id="modal-name" />
@@ -666,7 +666,7 @@
             <textarea
               class="comments"
               name="comments"
-              id="modale-comments"
+              id="modal-comments"
               cols="30"
               rows="10"
               placeholder="Введите текст"
@@ -684,12 +684,9 @@
               <svg class="check-icon" width="16" height="15">
                 <use href="./images/icons.svg#icon-form-check-checked" />
               </svg>
-              <div class="box">
-                Соглашаюсь с рассылкой и принимаю
-                <a class="agreement-link" href="">Условия договора</a>
-              </div>
-              <!-- Соглашаюсь с рассылкой и принимаю
-              <a class="agreement-link" href="">Условия договора</a> -->
+
+              Соглашаюсь с рассылкой и принимаю
+              <a class="agreement-link" href="">Условия договора</a>
             </label>
           </div>
           <button class="btn-submit" type="submit">Отправить</button>

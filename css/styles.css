@@ -959,7 +959,7 @@ button {
   resize: none;
 }
 
-.modal-form textarea[name='comments']:placeholder-shown {
+.modal-form textarea[name='comments']::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.143;
@@ -1023,6 +1023,7 @@ input[name='email'] + .icon {
   background-color: transparent;
   border: 2px solid black;
   border-radius: 2px;
+  transition: box-shadow var(--delay) var(--time-function); /**/
 }
 
 .check-icon use {
@@ -1048,12 +1049,12 @@ input[name='email'] + .icon {
   user-select: none;
 }
 
-.group-checkbox > label:focus-within {
-  border: 1px solid var(--accent-color);
+.checkbox-agreement:focus + .check-icon {
+  border-color: var(--accent-color);
 }
 
-.group-checkbox .box {
-  display: inline-block;
+.group-checkbox .check-icon:hover {
+  border-color: var(--accent-color);
 }
 
 /*
