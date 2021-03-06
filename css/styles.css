@@ -830,6 +830,7 @@ button {
   color: var(--current-text-color);
 }
 
+/* Оформление поля ввода ел.почты в форме на подписку в футере */
 .sign-form > .sign-email {
   padding-left: 16px;
   padding-right: 16px;
@@ -847,10 +848,12 @@ button {
   transition: border-color var(--delay) var(--time-function); /***/
 }
 
+/* Добавление еффекта ховера на поле ввода ел.почты в форме на подписку в футере */
 .sign-form > .sign-email:hover {
   border-color: var(--accent-color);
 }
 
+/* Оформление кнопки в форме на подписку в футере */
 .sign-form > .btn-sign {
   display: inline-flex;
   justify-content: center;
@@ -875,15 +878,18 @@ button {
   color: var(--current-text-color);
 }
 
+/* Добавление еффекта ховера на кнопку в форме на подписку в футере */
 .sign-form > .btn-sign:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* Добавление еффекта ховера и фокуса на кнопку закрытия ("крестик") в модалке */
 .modal .btn-close:hover,
 .modal .btn-close:focus {
   color: var(--accent-color);
 }
 
+/* Оформление заголовка в модалке */
 .modal .title {
   margin-bottom: 12px;
   font-weight: 700;
@@ -893,6 +899,7 @@ button {
   letter-spacing: 0.03em;
 }
 
+/* Оформление кнопки Отправить в модалке */
 .modal-form > .btn-submit {
   display: block;
   margin: 30px auto 0;
@@ -914,13 +921,16 @@ button {
     box-shadow var(--delay) var(--time-function);
 }
 
+/* Добавление еффекта ховера и фокуса на кнопку Отправить в модалке */
 .modal-form > .btn-submit:hover,
 .modal-form > .btn-submit:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* Оформление меток над полями ввода в модалке */
 .modal-form > .label {
+  display: inline-block;
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -929,6 +939,7 @@ button {
   color: var(--secondary-txt-color);
 }
 
+/* Оформление полей ввода в модалке */
 .modal-form input[name='name'],
 .modal-form input[name='telephone'],
 .modal-form input[name='email'],
@@ -937,8 +948,8 @@ button {
 
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.167;
-  letter-spacing: 0.01em;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
 
   color: var(--secondary-txt-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -962,12 +973,13 @@ button {
 
 .modal-form textarea[name='comments']::placeholder {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.143;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
+/* Позиционирование иконок в полях ввода */
 .modal-form .group {
   position: relative;
   margin-bottom: 10px;
@@ -980,8 +992,10 @@ button {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: fill var(--delay) var(--time-function);
 }
 
+/* Оформление кастомного чекбокса и его анимации с ховером и фокусом*/
 .modal-form .group-checkbox {
   margin-top: 20px;
   font-weight: 400;
@@ -1018,7 +1032,7 @@ button {
   background-color: transparent;
   border: 2px solid black;
   border-radius: 2px;
-  transition: box-shadow var(--delay) var(--time-function); /**/
+  transition: border-color var(--delay) var(--time-function);
   cursor: pointer;
 }
 
@@ -1048,6 +1062,7 @@ button {
 
 .checkbox-agreement:focus + .check-icon {
   border-color: var(--accent-color);
+  outline: 0.5px dotted;
 }
 
 .group-checkbox .check-icon:hover {
