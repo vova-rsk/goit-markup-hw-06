@@ -5,7 +5,7 @@
   /* Набор основной цветовой гаммы фона и текста */
   --accent-color: #2196f3;
   --current-bg-color: #2196f3;
-  --current-text-color: #fff;
+  --current-txt-color: #fff;
   --main-txt-color: #212121;
   --secondary-txt-color: #757575;
   --third-txt-color: rgba(255, 255, 255, 0.6);
@@ -283,7 +283,7 @@ button {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--current-text-color);
+  color: var(--current-txt-color);
   text-align: center;
   background-color: var(--current-bg-color);
   border: none;
@@ -432,7 +432,7 @@ button {
 
 /* Стилизация активированной кнопки "Все" секции "Портфолио" */
 /* .portfolio-button-list .button-all {
-  color: var(--current-text-color);
+  color: var(--current-txt-color);
   background-color: var(--current-bg-color);
   border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -447,7 +447,7 @@ button {
 /* Добавление эффектов hover и focus кнопкам секции "Портфолио" */
 .portfolio-button-list button:hover,
 .portfolio-button-list button:focus {
-  color: var(--current-text-color);
+  color: var(--current-txt-color);
   background-color: var(--current-bg-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -588,7 +588,7 @@ button {
 /* Эффекты смены цвета и фона при ховере и фокусе */
 .person-container .svg-container:hover,
 .person-container .svg-container:focus {
-  color: var(--current-text-color);
+  color: var(--current-txt-color);
   background-color: var(--accent-color);
 }
 
@@ -651,7 +651,7 @@ button {
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--current-text-color);
+  color: var(--current-txt-color);
 }
 
 /* Обнуление вертикальных margin списка соцсетей в footer */
@@ -664,7 +664,7 @@ button {
 .footer .svg-container {
   width: 44px;
   height: 44px;
-  color: var(--current-text-color);
+  color: var(--current-txt-color);
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   border-radius: 50%;
@@ -733,7 +733,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--current-text-color);
+  color: var(--current-txt-color);
   background: rgba(47, 48, 58, 0.8);
 }
 
@@ -827,7 +827,7 @@ button {
   font-size: 18px;
   line-height: 1.556;
   letter-spacing: 0.03em;
-  color: var(--current-text-color);
+  color: var(--current-txt-color);
 }
 
 /* Оформление поля ввода ел.почты в форме на подписку в футере */
@@ -840,12 +840,16 @@ button {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: var(--third-txt-color);
+  color: var(--current-txt-color);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  transition: border-color var(--delay) var(--time-function); /***/
+  transition: border-color var(--delay) var(--time-function);
+}
+
+.sign-form > .sign-email::placeholder {
+  color: var(--third-txt-color);
 }
 
 /* Добавление еффекта ховера на поле ввода ел.почты в форме на подписку в футере */
@@ -866,7 +870,7 @@ button {
   font-size: 16px;
   line-height: 1.875px;
   letter-spacing: 0.06em;
-  color: var(--current-text-color);
+  color: var(--current-txt-color);
   background-color: var(--current-bg-color);
   border: none;
   border-radius: 4px;
@@ -875,7 +879,7 @@ button {
 
 .btn-sign > .sign-icon {
   margin-left: 10px;
-  color: var(--current-text-color);
+  color: var(--current-txt-color);
 }
 
 /* Добавление еффекта ховера на кнопку в форме на подписку в футере */
@@ -911,7 +915,7 @@ button {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--current-text-color);
+  color: var(--current-txt-color);
   background-color: var(--current-bg-color);
   border: none;
   border-radius: 4px;
